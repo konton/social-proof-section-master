@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+body{
+    background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    height: 100%;
+    background-position: left 34vw top 30vh,right 41vw bottom 60vh;
+}
+
+.content{
+    margin: 25vh;
+    padding-bottom: 25vh;
+}
+
+.topic{
+    font-weight: 600;
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+    grid-column: 1;
+    margin-right: 40vh;
+}
+.describe{
+    grid-column: 1;
+    color: hsl(303, 10%, 53%);
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-right: -5vh;
+    line-height: 1.4rem;
+}
+.upper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+.rating{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+ 
+}
+
+.rat1{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.rat2{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 10%;
+}
+.rat3{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.star{
+   margin: 5%;
+
+}
+
+.recommend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+    font-size: 17px;
+}
+
+.star img{
+    margin-right: 3px;
+}
+
+
+.lower{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 2%;
+    height: 10vh;
+}
+.review1{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    color: white;
+    padding: 10%;
+    width: 55%;
+    height: fit-content;
+}
+.review2{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    color: white;
+    padding: 10%;
+    width: 55%;
+    height: fit-content;
+    margin-top: 5%;
+}
+.review3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    color: white;
+    padding: 10%;
+    width: 55%;
+    height: fit-content;
+    margin-top: 10%;
+}
+.reviewer{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.name{
+    margin-left: 7%;
+}
+
+.verified{
+    color:hsl(333, 80%, 67%);
+}
+
+.reviewer img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.comment{
+    margin-top: 7%;
+    line-height: 1.4rem;
+}
+
+
+@media screen and (max-width:375px){
+   .content{
+    margin: 0;
+   }
+   .upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15% 5% 5% 5%;
+    
+   }
+
+   .rating{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .topic{
+     margin:0;
+   }
+
+   .describe{
+    margin: 0;
+    margin-top: 5%;
+
+   }
+
+   .star{
+    margin: 5px;
+   }
+   .rat1{
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 0;
+    flex-direction: column;
+   }
+   .rat2{
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 0;
+    flex-direction: column;
+   }
+   .rat3{
+
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 0;
+    flex-direction: column;
+   }
+
+   .lower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+   }
+   .review2{
+    margin-top: 5%;
+   }
+   .review3{
+    margin: 5%;
+   }
+
+}
+
